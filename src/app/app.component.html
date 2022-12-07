@@ -1,2 +1,10 @@
-<app-a></app-a>
-<app-b></app-b>
+<app-menu></app-menu>
+<div #monApp>
+  <h1>{{ 'app_title' | translate}}</h1>
+  <h1>{{ 'app_punchline' | translate}}</h1>
+  <app-a></app-a>
+  <app-b></app-b>
+  <ul>
+    <li *ngFor="let b of breweries">{{b.name}}</li>
+  </ul>
+</div>

@@ -4,4 +4,8 @@
   <li>sdfgdg</li>
   <li>sdgfdfsg</li>
   <li>sdfgfgds</li>
+  <select (change)="changeLang($event.target)">
+    <option value="fr" [selected]="lang === 'fr'">Francais</option>
+    <option value="en" [selected]="lang === 'en'">English</option>
+  </select>
 </ul>
